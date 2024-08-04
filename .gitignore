@@ -21,5 +21,16 @@
 go.work
 go.work.sum
 
+# swaggo
+docs
+
+# log
+logs
+
+.idea
+
+tmp
+
 # env file
 .env
+application.yml
