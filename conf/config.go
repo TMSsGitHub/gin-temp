@@ -7,6 +7,7 @@ type config struct {
 	Db     *database `mapstructure:"database"`
 	Redis  *redis    `mapstructure:"redis"`
 	Logger *logger   `mapstructure:"logger"`
+	File   *file     `mapstructure:"file"`
 }
 
 var Cfg config

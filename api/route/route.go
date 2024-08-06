@@ -38,6 +38,12 @@ func notAuthRoute(r *gin.Engine) {
 		accountRoute.POST("/login", handler.Login)
 		accountRoute.POST("/register", handler.Register)
 	}
+
+	fileRoute := r.Group("/file")
+	{
+		fileRoute.POST("/upload", handler.FileUpload)
+		fileRoute.GET("/download/:url", handler.FileDownload)
+	}
 }
 
 func authRoute(r *gin.RouterGroup) {

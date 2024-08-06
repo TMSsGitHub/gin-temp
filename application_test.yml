@@ -27,3 +27,6 @@ redis:
 logger:
   dir: ./logs
 
+file:
+  dir: /home/tms/Desktop/temp/TMS-GIN-FILE
+  max_size: 10 # MB
